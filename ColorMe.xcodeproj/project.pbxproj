@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B090904188DB540002DBA0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B090903188DB540002DBA0E /* Foundation.framework */; };
+		4B090906188DB540002DBA0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B090905188DB540002DBA0E /* CoreGraphics.framework */; };
+		4B090908188DB540002DBA0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B090907188DB540002DBA0E /* UIKit.framework */; };
+		4B09090E188DB540002DBA0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B09090C188DB540002DBA0E /* InfoPlist.strings */; };
+		4B090910188DB540002DBA0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09090F188DB540002DBA0E /* main.m */; };
+		4B090914188DB540002DBA0E /* myAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B090913188DB540002DBA0E /* myAppDelegate.m */; };
+		4B090917188DB540002DBA0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B090915188DB540002DBA0E /* Main.storyboard */; };
+		4B09091A188DB540002DBA0E /* myViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B090919188DB540002DBA0E /* myViewController.m */; };
+		4B09091C188DB540002DBA0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B09091B188DB540002DBA0E /* Images.xcassets */; };
+		4B090923188DB540002DBA0E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B090922188DB540002DBA0E /* XCTest.framework */; };
+		4B090924188DB540002DBA0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B090903188DB540002DBA0E /* Foundation.framework */; };
+		4B090925188DB540002DBA0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B090907188DB540002DBA0E /* UIKit.framework */; };
+		4B09092D188DB540002DBA0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B09092B188DB540002DBA0E /* InfoPlist.strings */; };
+		4B09092F188DB540002DBA0E /* ColorMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09092E188DB540002DBA0E /* ColorMeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B090926188DB540002DBA0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B0908F8188DB540002DBA0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B0908FF188DB540002DBA0E;
+			remoteInfo = ColorMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B090900188DB540002DBA0E /* ColorMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B090903188DB540002DBA0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B090905188DB540002DBA0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4B090907188DB540002DBA0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4B09090B188DB540002DBA0E /* ColorMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorMe-Info.plist"; sourceTree = "<group>"; };
+		4B09090D188DB540002DBA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4B09090F188DB540002DBA0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B090911188DB540002DBA0E /* ColorMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorMe-Prefix.pch"; sourceTree = "<group>"; };
+		4B090912188DB540002DBA0E /* myAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myAppDelegate.h; sourceTree = "<group>"; };
+		4B090913188DB540002DBA0E /* myAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myAppDelegate.m; sourceTree = "<group>"; };
+		4B090916188DB540002DBA0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B090918188DB540002DBA0E /* myViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myViewController.h; sourceTree = "<group>"; };
+		4B090919188DB540002DBA0E /* myViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myViewController.m; sourceTree = "<group>"; };
+		4B09091B188DB540002DBA0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4B090921188DB540002DBA0E /* ColorMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B090922188DB540002DBA0E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4B09092A188DB540002DBA0E /* ColorMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorMeTests-Info.plist"; sourceTree = "<group>"; };
+		4B09092C188DB540002DBA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4B09092E188DB540002DBA0E /* ColorMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorMeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B0908FD188DB540002DBA0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B090906188DB540002DBA0E /* CoreGraphics.framework in Frameworks */,
+				4B090908188DB540002DBA0E /* UIKit.framework in Frameworks */,
+				4B090904188DB540002DBA0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B09091E188DB540002DBA0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B090923188DB540002DBA0E /* XCTest.framework in Frameworks */,
+				4B090925188DB540002DBA0E /* UIKit.framework in Frameworks */,
+				4B090924188DB540002DBA0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B0908F7188DB540002DBA0E = {
+			isa = PBXGroup;
+			children = (
+				4B090909188DB540002DBA0E /* ColorMe */,
+				4B090928188DB540002DBA0E /* ColorMeTests */,
+				4B090902188DB540002DBA0E /* Frameworks */,
+				4B090901188DB540002DBA0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B090901188DB540002DBA0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B090900188DB540002DBA0E /* ColorMe.app */,
+				4B090921188DB540002DBA0E /* ColorMeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B090902188DB540002DBA0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B090903188DB540002DBA0E /* Foundation.framework */,
+				4B090905188DB540002DBA0E /* CoreGraphics.framework */,
+				4B090907188DB540002DBA0E /* UIKit.framework */,
+				4B090922188DB540002DBA0E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B090909188DB540002DBA0E /* ColorMe */ = {
+			isa = PBXGroup;
+			children = (
+				4B090912188DB540002DBA0E /* myAppDelegate.h */,
+				4B090913188DB540002DBA0E /* myAppDelegate.m */,
+				4B090915188DB540002DBA0E /* Main.storyboard */,
+				4B090918188DB540002DBA0E /* myViewController.h */,
+				4B090919188DB540002DBA0E /* myViewController.m */,
+				4B09091B188DB540002DBA0E /* Images.xcassets */,
+				4B09090A188DB540002DBA0E /* Supporting Files */,
+			);
+			path = ColorMe;
+			sourceTree = "<group>";
+		};
+		4B09090A188DB540002DBA0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B09090B188DB540002DBA0E /* ColorMe-Info.plist */,
+				4B09090C188DB540002DBA0E /* InfoPlist.strings */,
+				4B09090F188DB540002DBA0E /* main.m */,
+				4B090911188DB540002DBA0E /* ColorMe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B090928188DB540002DBA0E /* ColorMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B09092E188DB540002DBA0E /* ColorMeTests.m */,
+				4B090929188DB540002DBA0E /* Supporting Files */,
+			);
+			path = ColorMeTests;
+			sourceTree = "<group>";
+		};
+		4B090929188DB540002DBA0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B09092A188DB540002DBA0E /* ColorMeTests-Info.plist */,
+				4B09092B188DB540002DBA0E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B0908FF188DB540002DBA0E /* ColorMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B090932188DB540002DBA0E /* Build configuration list for PBXNativeTarget "ColorMe" */;
+			buildPhases = (
+				4B0908FC188DB540002DBA0E /* Sources */,
+				4B0908FD188DB540002DBA0E /* Frameworks */,
+				4B0908FE188DB540002DBA0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorMe;
+			productName = ColorMe;
+			productReference = 4B090900188DB540002DBA0E /* ColorMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B090920188DB540002DBA0E /* ColorMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B090935188DB540002DBA0E /* Build configuration list for PBXNativeTarget "ColorMeTests" */;
+			buildPhases = (
+				4B09091D188DB540002DBA0E /* Sources */,
+				4B09091E188DB540002DBA0E /* Frameworks */,
+				4B09091F188DB540002DBA0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B090927188DB540002DBA0E /* PBXTargetDependency */,
+			);
+			name = ColorMeTests;
+			productName = ColorMeTests;
+			productReference = 4B090921188DB540002DBA0E /* ColorMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B0908F8188DB540002DBA0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = my;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Carlos Hernandez";
+				TargetAttributes = {
+					4B090920188DB540002DBA0E = {
+						TestTargetID = 4B0908FF188DB540002DBA0E;
+					};
+				};
+			};
+			buildConfigurationList = 4B0908FB188DB540002DBA0E /* Build configuration list for PBXProject "ColorMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B0908F7188DB540002DBA0E;
+			productRefGroup = 4B090901188DB540002DBA0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B0908FF188DB540002DBA0E /* ColorMe */,
+				4B090920188DB540002DBA0E /* ColorMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B0908FE188DB540002DBA0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B09091C188DB540002DBA0E /* Images.xcassets in Resources */,
+				4B09090E188DB540002DBA0E /* InfoPlist.strings in Resources */,
+				4B090917188DB540002DBA0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B09091F188DB540002DBA0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B09092D188DB540002DBA0E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B0908FC188DB540002DBA0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B09091A188DB540002DBA0E /* myViewController.m in Sources */,
+				4B090914188DB540002DBA0E /* myAppDelegate.m in Sources */,
+				4B090910188DB540002DBA0E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B09091D188DB540002DBA0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B09092F188DB540002DBA0E /* ColorMeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B090927188DB540002DBA0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B0908FF188DB540002DBA0E /* ColorMe */;
+			targetProxy = 4B090926188DB540002DBA0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B09090C188DB540002DBA0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B09090D188DB540002DBA0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4B090915188DB540002DBA0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B090916188DB540002DBA0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B09092B188DB540002DBA0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B09092C188DB540002DBA0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B090930188DB540002DBA0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4B090931188DB540002DBA0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B090933188DB540002DBA0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorMe/ColorMe-Prefix.pch";
+				INFOPLIST_FILE = "ColorMe/ColorMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4B090934188DB540002DBA0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorMe/ColorMe-Prefix.pch";
+				INFOPLIST_FILE = "ColorMe/ColorMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4B090936188DB540002DBA0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColorMe.app/ColorMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorMe/ColorMe-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ColorMeTests/ColorMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4B090937188DB540002DBA0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColorMe.app/ColorMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorMe/ColorMe-Prefix.pch";
+				INFOPLIST_FILE = "ColorMeTests/ColorMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B0908FB188DB540002DBA0E /* Build configuration list for PBXProject "ColorMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B090930188DB540002DBA0E /* Debug */,
+				4B090931188DB540002DBA0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B090932188DB540002DBA0E /* Build configuration list for PBXNativeTarget "ColorMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B090933188DB540002DBA0E /* Debug */,
+				4B090934188DB540002DBA0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4B090935188DB540002DBA0E /* Build configuration list for PBXNativeTarget "ColorMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B090936188DB540002DBA0E /* Debug */,
+				4B090937188DB540002DBA0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B0908F8188DB540002DBA0E /* Project object */;
+}
