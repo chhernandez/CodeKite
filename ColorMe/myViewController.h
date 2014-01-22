@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface myViewController : UIViewController
+- (IBAction)dismissModalController:(id)sender;
 
 @end
