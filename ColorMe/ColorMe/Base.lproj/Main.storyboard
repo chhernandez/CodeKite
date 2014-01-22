@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="7Cv-0Y-UJu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="0.47459662720000001" blue="0.99415114589999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Purple" id="U3E-p6-fJn">
+                    <navigationItem key="navigationItem" title="Carlos" id="U3E-p6-fJn">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="Ej8-gj-4Kh">
                             <connections>
                                 <action selector="dismissModalController:" destination="vXZ-lx-hvc" id="9Q7-3r-fQn"/>
@@ -54,7 +54,7 @@
                         <viewControllerLayoutGuide type="bottom" id="frH-uR-N1f"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YEA-Sr-u79">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="0.92030265180000004" blue="0.25905645659999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -84,7 +84,7 @@
                         <viewControllerLayoutGuide type="bottom" id="lkn-BT-tvH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7RX-Ll-f2K">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -109,7 +109,7 @@
                         <viewControllerLayoutGuide type="bottom" id="C4d-We-hIN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="REv-40-DpW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="0.08449231955" blue="0.1265538175" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -149,7 +149,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Sgh-20-KNZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nSz-rx-jUx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="0.70675260849999999" blue="0.94826655360000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -174,7 +174,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xkb-Oq-YJK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Kxg-M8-A25">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.44942129889999999" green="1" blue="0.56455770429999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -194,10 +194,10 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="KKh-P5-RtK"/>
         <segue reference="tVK-Rl-9ni"/>
+        <segue reference="KKh-P5-RtK"/>
     </inferredMetricsTieBreakers>
 </document>
