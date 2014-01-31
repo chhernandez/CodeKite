@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F811072B-033D-4974-ABDD-198232FC563A</string>
+	<string>3A2A7816-D41D-42B3-B606-1CC335AD0413</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TDL</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>65F62D05-D1FA-4010-A3CB-99DA35BF2B6E</key>
-		<string>carloshernandez@utexas.edu:chhernandez/codekite.git</string>
+		<key>7AE0D8F2-25DD-41DA-A771-339467022890</key>
+		<string>https://github.com/chhernandez/CodeKite.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TDL.xcodeproj/project.xcworkspace</string>
+	<string>TDL/TDL.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>65F62D05-D1FA-4010-A3CB-99DA35BF2B6E</key>
-		<string>../..</string>
+		<key>7AE0D8F2-25DD-41DA-A771-339467022890</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>carloshernandez@utexas.edu:chhernandez/codekite.git</string>
+	<string>https://github.com/chhernandez/CodeKite.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>65F62D05-D1FA-4010-A3CB-99DA35BF2B6E</string>
+	<string>7AE0D8F2-25DD-41DA-A771-339467022890</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>65F62D05-D1FA-4010-A3CB-99DA35BF2B6E</string>
+			<string>7AE0D8F2-25DD-41DA-A771-339467022890</string>
 			<key>IDESourceControlWCCName</key>
-			<string>TDL</string>
+			<string>CodeKite</string>
 		</dict>
 	</array>
 </dict>
