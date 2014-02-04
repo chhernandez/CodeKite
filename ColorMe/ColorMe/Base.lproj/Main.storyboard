@@ -151,7 +151,7 @@
                     <view key="view" contentMode="scaleToFill" id="nSz-rx-jUx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="0.70675260849999999" blue="0.94826655360000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.063391644021739135" green="0.044543829775000737" blue="0.059737197547609144" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pink" id="F3V-jj-rWP">
                         <barButtonItem key="rightBarButtonItem" title="Green" id="DCr-gN-29S">
