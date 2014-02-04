@@ -475,6 +475,7 @@
 				4B6D8B4D189ED787001C798B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B6D8B4E189ED787001C798B /* Build configuration list for PBXNativeTarget "WeatherVainTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +484,7 @@
 				4B6D8B50189ED787001C798B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
