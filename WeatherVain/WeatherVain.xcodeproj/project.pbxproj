@@ -14,7 +14,6 @@
 		4B6D8B26189ED787001C798B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D8B25189ED787001C798B /* main.m */; };
 		4B6D8B2A189ED787001C798B /* cdkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D8B29189ED787001C798B /* cdkAppDelegate.m */; };
 		4B6D8B2D189ED787001C798B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6D8B2B189ED787001C798B /* Main_iPhone.storyboard */; };
-		4B6D8B30189ED787001C798B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6D8B2E189ED787001C798B /* Main_iPad.storyboard */; };
 		4B6D8B33189ED787001C798B /* cdkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D8B32189ED787001C798B /* cdkViewController.m */; };
 		4B6D8B35189ED787001C798B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6D8B34189ED787001C798B /* Images.xcassets */; };
 		4B6D8B3C189ED787001C798B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6D8B3B189ED787001C798B /* XCTest.framework */; };
@@ -46,7 +45,6 @@
 		4B6D8B28189ED787001C798B /* cdkAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cdkAppDelegate.h; sourceTree = "<group>"; };
 		4B6D8B29189ED787001C798B /* cdkAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cdkAppDelegate.m; sourceTree = "<group>"; };
 		4B6D8B2C189ED787001C798B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		4B6D8B2F189ED787001C798B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		4B6D8B31189ED787001C798B /* cdkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cdkViewController.h; sourceTree = "<group>"; };
 		4B6D8B32189ED787001C798B /* cdkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cdkViewController.m; sourceTree = "<group>"; };
 		4B6D8B34189ED787001C798B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				4B6D8B28189ED787001C798B /* cdkAppDelegate.h */,
 				4B6D8B29189ED787001C798B /* cdkAppDelegate.m */,
 				4B6D8B2B189ED787001C798B /* Main_iPhone.storyboard */,
-				4B6D8B2E189ED787001C798B /* Main_iPad.storyboard */,
 				4B6D8B31189ED787001C798B /* cdkViewController.h */,
 				4B6D8B32189ED787001C798B /* cdkViewController.m */,
 				4B6D8B34189ED787001C798B /* Images.xcassets */,
@@ -232,7 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B6D8B30189ED787001C798B /* Main_iPad.storyboard in Resources */,
 				4B6D8B35189ED787001C798B /* Images.xcassets in Resources */,
 				4B6D8B2D189ED787001C798B /* Main_iPhone.storyboard in Resources */,
 				4B6D8B24189ED787001C798B /* InfoPlist.strings in Resources */,
@@ -293,14 +289,6 @@
 				4B6D8B2C189ED787001C798B /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		4B6D8B2E189ED787001C798B /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B6D8B2F189ED787001C798B /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		4B6D8B44189ED787001C798B /* InfoPlist.strings */ = {
