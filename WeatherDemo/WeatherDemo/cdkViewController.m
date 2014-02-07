@@ -38,6 +38,20 @@
                                                          options:kNilOptions error:&error];
     NSArray* austinWeather = [json objectForKey:@"main"]; //2
     NSLog(@"main: %@", austinWeather); //3
+    
+    NSDictionary* weather = [austinWeather objectAtIndex:0];  // get the latest weather
+    
+    // get the individual data values
+  //  NSNumber* humidity = [weather objectForKey:@"humidy"];
+  //  NSNumber* pressure = [weather objectForKey:@"pressure"];
+  //  NSString* temp = [weather objectForKey:@"temp"];
+//    float tempCelsius = [temp floatValue] - 273.15;
+ //   float tempFahrenheit = (tempCelsius * 1.8) + 32;
+    
+    // set the label approprately
+  //  todaysWeather.text = [NSString stringWithFormat:@"Today's temperature is "];
+    
+
 }
 
 - (void)didReceiveMemoryWarning
