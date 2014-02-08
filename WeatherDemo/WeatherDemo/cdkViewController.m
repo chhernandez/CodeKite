@@ -50,6 +50,9 @@
         NSNumber* myhumidity = mainAustin[@"humidity"];
         NSLog(@"humidity: %@", myhumidity);
         
+        NSNumber* mypressure = mainAustin[@"pressure"];
+        NSLog(@"pressure: %@", mypressure);
+        
         NSNumber* mytemp = mainAustin[@"temp"];
         NSLog(@"temp: %@", mytemp);
         
@@ -58,9 +61,12 @@
         
         float mytempfahrenheit = (mytempcelsius * 1.8) + 32;
         NSLog(@"temp fahrenheit: %f", mytempfahrenheit);
+        
+        
+         _todaysWeather.text = [NSString stringWithFormat: @"Today's temperature is %f", mytempfahrenheit];
     }
     
-    
+   // _todaysWeather.text = [NSString stringWithFormat: @"Today's temperature is %@", mytemp];
 
     
 }
