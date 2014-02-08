@@ -8,7 +8,7 @@
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)  // 1
 
-#define kLatestWeatherURL [NSURL URLWithString: @"http://api.openweathermap.org/data/2.5/weather?q=austin,tx"] // 2
+#define kLatestWeatherURL [NSURL URLWithString: @"http://api.openweathermap.org/data/2.5/weather?q=austin,tx&APPID=248e458171fcd11a7b45c08823b982d8"] // 2
 
 #import "cdkViewController.h"
 
@@ -34,25 +34,34 @@
 - (void)fetchedData:(NSData *)responseData{
     // parse out the json data
     NSError* error;
-    NSDictionary* json = [NSJSONSerialization JSONObjectWithData:responseData //1
-                                                         options:kNilOptions error:&error];
-    NSArray* austinWeather = [json objectForKey:@"main"]; //2
-    NSLog(@"main: %@", austinWeather); //3
+    NSDictionary* austinWeather = [NSJSONSerialization JSONObjectWithData:responseData //1
+                                                         options:NSJSONReadingMutableContainers error:&error];
     
     
- //   NSDictionary *forecastData = [austinWeather];
-  //  cell.textLabel.text = [NSString stringWithFormat:@"%.1f℃ - %@",
-  //                         [forecastData[@"main"][@"temp"] floatValue],
-  ////                         forecastData[@"weather"][0][@"main"]
-   //                        ];
+    NSLog(@"austin weather: %@", austinWeather);
+    
+    if (error){
+         NSLog(@"%@", [error localizedDescription]);
+    }
+    else{
+        NSDictionary* mainAustin = austinWeather[@"main"];
+        NSLog(@"main austin: %@",mainAustin);
+        
+        NSNumber* myhumidity = mainAustin[@"humidity"];
+        NSLog(@"humidity: %@", myhumidity);
+        
+        NSNumber* mytemp = mainAustin[@"temp"];
+        NSLog(@"temp: %@", mytemp);
+        
+        float mytempcelsius = [mytemp floatValue] - 273.15;
+        NSLog(@"temp celsius: %f", mytempcelsius);
+        
+        float mytempfahrenheit = (mytempcelsius * 1.8) + 32;
+        NSLog(@"temp fahrenheit: %f", mytempfahrenheit);
+    }
     
     
-  //  _weatherAPI.text = austinWeather;
-    
-   //
-   // NSLog(@"first element in array: %@", );
-    //get the latest austin weather
-   // NSDictionary* myweather = [austinWeather objectAtIndex:0];
+
     
 }
 
