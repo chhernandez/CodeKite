@@ -8,7 +8,7 @@
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)  // 1
 
-#define kLatestWeatherURL [NSURL URLWithString: @"http://api.openweathermap.org/data/2.5/weather?q=austin%2Ctx"] // 2
+#define kLatestWeatherURL [NSURL URLWithString: @"http://api.openweathermap.org/data/2.5/weather?q=austin,tx"] // 2
 
 #import "cdkViewController.h"
 
@@ -38,6 +38,22 @@
                                                          options:kNilOptions error:&error];
     NSArray* austinWeather = [json objectForKey:@"main"]; //2
     NSLog(@"main: %@", austinWeather); //3
+    
+    
+ //   NSDictionary *forecastData = [austinWeather];
+  //  cell.textLabel.text = [NSString stringWithFormat:@"%.1f℃ - %@",
+  //                         [forecastData[@"main"][@"temp"] floatValue],
+  ////                         forecastData[@"weather"][0][@"main"]
+   //                        ];
+    
+    
+  //  _weatherAPI.text = austinWeather;
+    
+   //
+   // NSLog(@"first element in array: %@", );
+    //get the latest austin weather
+   // NSDictionary* myweather = [austinWeather objectAtIndex:0];
+    
 }
 
 - (void)didReceiveMemoryWarning
