@@ -13,5 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *todaysWeather;
 @property (weak, nonatomic) IBOutlet UILabel *weatherAPI;
 
+@property (weak, nonatomic) IBOutlet UILabel *fashionAPI;
+@property (weak, nonatomic) IBOutlet UIImageView *fashionImage;
 
 @end

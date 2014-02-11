@@ -105,15 +105,14 @@
     
    // _todaysWeather.text = [NSString stringWithFormat: @"Today's temperature is %@", mytemp];
 
-    NSDictionary* myInfo =
+    NSDictionary* myFashionInfo =
     [NSDictionary dictionaryWithContentsOfJSONURLString:
-     @"http://api.openweathermap.org/data/2.5/weather?q=miami,fl&APPID=248e458171fcd11a7b45c08823b982d8"];
-    NSLog(@"myInfo: %@",myInfo);
+     @"http://www.hernandezvendingservices/fashion"];
+    NSLog(@"myFashionInfo: %@",myFashionInfo);
     
-  //  NSDictionary* information =
-   // [NSDictionary dictionaryWithObjectsAndKeys:
-  //   @"humidity",@"pressure",@"temp",@"temp_max", @"temp_min", nil];
-  //  NSData* json = [information toJSON];
+    
+    
+
 
 }
 
