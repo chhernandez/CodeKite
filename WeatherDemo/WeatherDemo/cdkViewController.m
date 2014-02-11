@@ -16,6 +16,35 @@
 
 @end
 
+@interface NSDictionary(JSONCategories)
++(NSDictionary*)dictionaryWithContentsOfJSONURLString:
+(NSString*)urlAddress;
+-(NSData*)toJSON;
+@end
+
+@implementation NSDictionary(JSONCategories)
++(NSDictionary*)dictionaryWithContentsOfJSONURLString:
+(NSString*)urlAddress
+{
+    NSData* data = [NSData dataWithContentsOfURL:
+                    [NSURL URLWithString: urlAddress] ];
+    __autoreleasing NSError* error = nil;
+    id result = [NSJSONSerialization JSONObjectWithData:data
+                                                options:kNilOptions error:&error];
+    if (error != nil) return nil;
+    return result;
+}
+
+-(NSData*)toJSON
+{
+    NSError* error = nil;
+    id result = [NSJSONSerialization dataWithJSONObject:self
+                                                options:kNilOptions error:&error];
+    if (error != nil) return nil;
+    return result;    
+}
+@end
+
 @implementation cdkViewController
 
 - (void)viewDidLoad
@@ -37,6 +66,11 @@
     NSDictionary* austinWeather = [NSJSONSerialization JSONObjectWithData:responseData //1
                                                          options:NSJSONReadingMutableContainers error:&error];
     
+    NSLog(@"responseData: %@", responseData);
+    
+    //print out the data contents
+    _weatherAPI.text = [[NSString alloc] initWithData:responseData
+                                             encoding:NSUTF8StringEncoding];
     
     NSLog(@"austin weather: %@", austinWeather);
     
@@ -47,8 +81,12 @@
         NSDictionary* mainAustin = austinWeather[@"main"];
         NSLog(@"main austin: %@",mainAustin);
         
+   
         NSNumber* myhumidity = mainAustin[@"humidity"];
         NSLog(@"humidity: %@", myhumidity);
+        
+        NSNumber* mypressure = mainAustin[@"pressure"];
+        NSLog(@"pressure: %@", mypressure);
         
         NSNumber* mytemp = mainAustin[@"temp"];
         NSLog(@"temp: %@", mytemp);
@@ -58,13 +96,30 @@
         
         float mytempfahrenheit = (mytempcelsius * 1.8) + 32;
         NSLog(@"temp fahrenheit: %f", mytempfahrenheit);
+        
+        
+        _todaysWeather.text = [NSString stringWithFormat: @"Today's temperature is %.2f\u00B0f. \r Humidity is %@%% and \r Pressure at %@ hPa. ", mytempfahrenheit, myhumidity, mypressure];
+        
+
     }
     
+<<<<<<< HEAD
     NSString* mystring = [
     _todaysWeather.text = [NSString ("hello there")];
     
+=======
+   // _todaysWeather.text = [NSString stringWithFormat: @"Today's temperature is %@", mytemp];
+>>>>>>> 2b05e311d706fd3b251cedfe46e4aaefd065c6af
 
+    NSDictionary* myFashionInfo =
+    [NSDictionary dictionaryWithContentsOfJSONURLString:
+     @"http://www.hernandezvendingservices/fashion"];
+    NSLog(@"myFashionInfo: %@",myFashionInfo);
     
+    
+    
+
+
 }
 
 - (void)didReceiveMemoryWarning
