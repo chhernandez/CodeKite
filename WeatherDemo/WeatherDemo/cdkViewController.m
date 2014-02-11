@@ -103,6 +103,13 @@
 
     }
     
+<<<<<<< HEAD
+    NSString* mystring = [
+    _todaysWeather.text = [NSString ("hello there")];
+    
+=======
+   // _todaysWeather.text = [NSString stringWithFormat: @"Today's temperature is %@", mytemp];
+>>>>>>> 2b05e311d706fd3b251cedfe46e4aaefd065c6af
 
     NSDictionary* myFashionInfo =
     [NSDictionary dictionaryWithContentsOfJSONURLString:
