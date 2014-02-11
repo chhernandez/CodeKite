@@ -60,6 +60,8 @@
         NSLog(@"temp fahrenheit: %f", mytempfahrenheit);
     }
     
+    NSString* mystring = [
+    _todaysWeather.text = [NSString ("hello there")];
     
 
     
