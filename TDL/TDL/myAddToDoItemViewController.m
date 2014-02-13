@@ -35,7 +35,7 @@
         // Custom initialization
     }
     return self;
-}
+}// end of function
 
 - (void)viewDidLoad
 {
