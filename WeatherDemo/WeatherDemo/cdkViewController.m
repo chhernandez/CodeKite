@@ -110,7 +110,8 @@
      @"http://www.hernandezvendingservices/fashion"];
     NSLog(@"myFashionInfo: %@",myFashionInfo);
     
-    //make new change
+    
+    
 
 
 }
