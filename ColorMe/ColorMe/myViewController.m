@@ -27,6 +27,6 @@
 }
 
 - (IBAction)dismissModalController:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissModalViewControllerAnimated:YES]; //ignore this warning message
 }
 @end
