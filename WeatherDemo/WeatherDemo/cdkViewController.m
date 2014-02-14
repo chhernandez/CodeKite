@@ -12,6 +12,8 @@
 
 #import "cdkViewController.h"
 
+#import <Parse/Parse.h>
+
 @interface cdkViewController ()
 
 @end
@@ -105,14 +107,18 @@
     
    // _todaysWeather.text = [NSString stringWithFormat: @"Today's temperature is %@", mytemp];
 
-//    NSDictionary* myFashionInfo =
-  //  [NSDictionary dictionaryWithContentsOfJSONURLString:
-    // @"http://www.hernandezvendingservices/fashion"];
-   // NSLog(@"myFashionInfo: %@",myFashionInfo);
+    NSDictionary* myFashionInfo =
+    [NSDictionary dictionaryWithContentsOfJSONURLString:
+     @"http://www.hernandezvendingservices/fashion"];
+    NSLog(@"myFashionInfo: %@",myFashionInfo);
     
-    
-    
+    //make new change
 
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    testObject[@"foo"] = @"bar";
+    [testObject saveInBackground];
+    
+    
 
 }
 

@@ -78,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="152" y="80"/>
         </scene>
-        <!--Cdk View Controller - Closet-->
+        <!--Cdk View Controller - My Item-->
         <scene sceneID="xEU-hz-NAi">
             <objects>
                 <viewController id="qmV-ZC-i9W" customClass="cdkViewController" sceneMemberID="viewController">
@@ -111,8 +111,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.51136738163227613" green="0.9178292410714286" blue="0.68674095837542015" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Closet" id="laD-xe-Hpy">
+                    <navigationItem key="navigationItem" title="My Item" id="laD-xe-Hpy">
                         <barButtonItem key="leftBarButtonItem" id="vg9-X9-F2E"/>
+                        <barButtonItem key="rightBarButtonItem" title="Closet" id="vt1-zS-as7">
+                            <connections>
+                                <segue destination="mE6-Df-XOQ" kind="push" id="Ihl-3e-CTu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="fashionAPI" destination="klM-EE-SH7" id="hII-2k-W8n"/>
@@ -122,6 +127,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVV-OV-Tfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="604" y="80"/>
+        </scene>
+        <!--Table View Controller - Closet-->
+        <scene sceneID="lvi-aj-86s">
+            <objects>
+                <tableViewController id="mE6-Df-XOQ" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="U4B-DC-aFE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="JE5-KL-2xH">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JE5-KL-2xH" id="QhD-Ed-pkz">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mE6-Df-XOQ" id="j9c-Ma-WLd"/>
+                            <outlet property="delegate" destination="mE6-Df-XOQ" id="aKK-sY-8PL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Closet" id="ZYW-MI-1gt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33W-4d-SQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059" y="80"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
