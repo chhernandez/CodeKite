@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="604" y="80"/>
         </scene>
-        <!--Table View Controller - Closet-->
+        <!--Cdk Table View Controller - Closet-->
         <scene sceneID="lvi-aj-86s">
             <objects>
-                <tableViewController id="mE6-Df-XOQ" sceneMemberID="viewController">
+                <tableViewController id="mE6-Df-XOQ" customClass="cdkTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="U4B-DC-aFE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
