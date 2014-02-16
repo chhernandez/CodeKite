@@ -18,6 +18,8 @@
 		4B27658C18ADBD4C005A1474 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B27658318ADBD4C005A1474 /* StoreKit.framework */; };
 		4B27658D18ADBD4C005A1474 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B27658418ADBD4C005A1474 /* SystemConfiguration.framework */; };
 		4B46F2A718B03613000F70EC /* cdkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B46F2A618B03613000F70EC /* cdkTableViewController.m */; };
+		4B46F2AC18B06B4E000F70EC /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B46F2AB18B06B4E000F70EC /* placeholder.png */; };
+		4B46F2AF18B07842000F70EC /* cdkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B46F2AE18B07842000F70EC /* cdkDetailViewController.m */; };
 		4B72584018A46BC400941F1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B72583F18A46BC400941F1F /* Foundation.framework */; };
 		4B72584218A46BC400941F1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B72584118A46BC400941F1F /* CoreGraphics.framework */; };
 		4B72584418A46BC500941F1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B72584318A46BC400941F1F /* UIKit.framework */; };
@@ -57,6 +59,9 @@
 		4B27658418ADBD4C005A1474 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4B46F2A518B03613000F70EC /* cdkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkTableViewController.h; sourceTree = "<group>"; };
 		4B46F2A618B03613000F70EC /* cdkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkTableViewController.m; sourceTree = "<group>"; };
+		4B46F2AB18B06B4E000F70EC /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = ../../../../Desktop/placeholder.png; sourceTree = "<group>"; };
+		4B46F2AD18B07842000F70EC /* cdkDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdkDetailViewController.h; sourceTree = "<group>"; };
+		4B46F2AE18B07842000F70EC /* cdkDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdkDetailViewController.m; sourceTree = "<group>"; };
 		4B72583C18A46BC400941F1F /* WeatherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B72583F18A46BC400941F1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4B72584118A46BC400941F1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +160,7 @@
 		4B72584518A46BC500941F1F /* WeatherDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4B46F2AB18B06B4E000F70EC /* placeholder.png */,
 				4B72584E18A46BC500941F1F /* cdkAppDelegate.h */,
 				4B72584F18A46BC500941F1F /* cdkAppDelegate.m */,
 				4B72585118A46BC500941F1F /* Main.storyboard */,
@@ -164,6 +170,8 @@
 				4B72584618A46BC500941F1F /* Supporting Files */,
 				4B46F2A518B03613000F70EC /* cdkTableViewController.h */,
 				4B46F2A618B03613000F70EC /* cdkTableViewController.m */,
+				4B46F2AD18B07842000F70EC /* cdkDetailViewController.h */,
+				4B46F2AE18B07842000F70EC /* cdkDetailViewController.m */,
 			);
 			path = WeatherDemo;
 			sourceTree = "<group>";
@@ -275,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B72585818A46BC500941F1F /* Images.xcassets in Resources */,
+				4B46F2AC18B06B4E000F70EC /* placeholder.png in Resources */,
 				4B72584A18A46BC500941F1F /* InfoPlist.strings in Resources */,
 				4B72585318A46BC500941F1F /* Main.storyboard in Resources */,
 			);
@@ -299,6 +308,7 @@
 				4B72584C18A46BC500941F1F /* main.m in Sources */,
 				4B72585018A46BC500941F1F /* cdkAppDelegate.m in Sources */,
 				4B72585618A46BC500941F1F /* cdkViewController.m in Sources */,
+				4B46F2AF18B07842000F70EC /* cdkDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

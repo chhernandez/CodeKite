@@ -7,6 +7,7 @@
 //
 
 #import "cdkTableViewController.h"
+#import "cdkDetailViewController.h"
 
 @interface cdkTableViewController ()
 
@@ -131,11 +132,50 @@
     }
     
     // Configure the cell
-   cell.textLabel.text = [object objectForKey:@"Label"];
+    cell.textLabel.text = [object objectForKey:@"Label"];
+    
+    PFFile *thumbnail = object[@"Image"];
+    cell.imageView.image = [UIImage imageNamed:@"placeholder.png"];
+    cell.imageView.file = thumbnail;
    // cell.imageView.file = [object objectForKey:self.imageKey];
-   cell.detailTextLabel.text = [NSString stringWithFormat:@"Rating: %@", [object objectForKey:@"Rating"]];
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Rating: %@", [object objectForKey:@"Rating"]];
+
+    cell.accessoryType = UITableViewCellAccessoryDetailButton;
+   /* if (toDoItem.completed) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }*/
     
     return cell;
 }
+  /*
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
+  //  [[segue destinationViewController] detailItems:[self objectAtIndex:[self.tableView indexPathForCell:sender]];
+ 
+    if ([segue.identifier isEqualToString:@"myItem"]) {
+        cdkDetailViewController *detailViewController = [segue destinationViewController];
+        NSInteger row = [[self tableView].indexPathForSelectedRow row];
+        detailViewController.detailItems = [self.objects objectAtIndex:row];
+    }
+
+    
+    
+}*/
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+       NSLog(@"I'm in the prepareforsegue: %d", 0);
+    
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        // Row selection
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        PFObject *object = [self.objects objectAtIndex:indexPath.row];
+        [[segue destinationViewController] setDetailItem:object];
+    }
+  
+    
+}
+
 @end
