@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) PFObject *detailItem;
 
+@property (weak, nonatomic) IBOutlet PFImageView *itemImage;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @end

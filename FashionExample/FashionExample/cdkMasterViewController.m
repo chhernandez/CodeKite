@@ -13,7 +13,7 @@
 #import "cdkDetailViewController.h"
 
 @interface cdkMasterViewController () {
-    NSMutableArray *_objects;
+   // NSMutableArray *_objects;
 }
 @end
 
@@ -23,6 +23,34 @@
 {
     [super awakeFromNib];
 }
+
+
+- (id)initWithStyle:(UITableViewStyle)style {
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom the table
+        
+        //  // The className to query on
+        //   self.parseClassName = @"Fashion";
+        
+        // The key of the PFObject to display in the label of the default cell style
+        //    self.textKey = @"Label";
+        
+        // Uncomment the following line to specify the key of a PFFile on the PFObject to display in the imageView of the default cell style
+        // self.imageKey = @"image";
+        
+        // Whether the built-in pull-to-refresh is enabled
+        self.pullToRefreshEnabled = YES;
+        
+        // Whether the built-in pagination is enabled
+        self.paginationEnabled = YES;
+        
+        // The number of objects to show per page
+        self.objectsPerPage = 25;
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad
 {

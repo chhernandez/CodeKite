@@ -34,6 +34,19 @@
 
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem objectForKey:@"Label"];
+        
+      
+    //
+    //    PFImageView *imageView = [[PFImageView alloc] init];
+    //    imageView.image = [UIImage imageNamed:@"..."]; // placeholder image
+    //    imageView.file = (PFFile *)someObject[@"picture"]; // remote image
+        
+       
+        
+        self.itemImage.image = [UIImage imageNamed:@"placeholder.png"];
+        self.itemImage.file = [self.detailItem objectForKey:@"Image"];
+        
+        [self.itemImage loadInBackground];
     }
 }
 
