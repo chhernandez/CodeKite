@@ -9,6 +9,8 @@
 #import "cdkTableViewController.h"
 #import "cdkDetailViewController.h"
 
+
+
 @interface cdkTableViewController ()
 
 @end
@@ -137,11 +139,11 @@
     PFFile *thumbnail = object[@"Image"];
     cell.imageView.image = [UIImage imageNamed:@"placeholder.png"];
     cell.imageView.file = thumbnail;
-   // cell.imageView.file = [object objectForKey:self.imageKey];
+ //   cell.imageView.file = [object objectForKey:self.imageKey];
     
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Rating: %@", [object objectForKey:@"Rating"]];
 
-    cell.accessoryType = UITableViewCellAccessoryDetailButton;
+    //cell.accessoryType = UITableViewCellAccessoryDetailButton;
    /* if (toDoItem.completed) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     } else {
@@ -165,6 +167,8 @@
     
 }*/
 
+
+/*
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
        NSLog(@"I'm in the prepareforsegue: %d", 0);
     
@@ -176,6 +180,33 @@
     }
   
     
+}*/
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        PFObject *object = [self.objects objectAtIndex:indexPath.row];
+        [[segue destinationViewController] setDetailItem:object];
+    }
+}
+/*
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        cdkDetailViewController *destViewController = segue.destinationViewController;
+        destViewController.detailItem = [self.objects objectAtIndex:indexPath.row];
+        
+        // Hide bottom tab bar in the detail view
+        //   destViewController.hidesBottomBarWhenPushed = YES;
+    }
+} */
+
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
 @end
