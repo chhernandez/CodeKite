@@ -15,31 +15,6 @@
 @implementation cdkMainViewController
 
 
-- (IBAction)loginButtonTouchHandler:(id)sender  {
-    // The permissions requested from the user
-    NSArray *permissionsArray = @[ @"user_about_me", @"user_relationships", @"user_birthday", @"user_location"];
-    
-    // Login PFUser using Facebook
-    [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
-    // Hide loading indicator
-        
-        if (!user) {
-            if (!error) {
-                NSLog(@"Uh oh. The user cancelled the Facebook login.");
-            } else {
-                NSLog(@"Uh oh. An error occurred: %@", error);
-            }
-        } else if (user.isNew) {
-            NSLog(@"User with facebook signed up and logged in!");
-          //  [self.navigationController pushViewController:[[UserDetailsViewController alloc] initWithStyle:UITableViewStyleGrouped] animated:YES];
-        } else {
-            NSLog(@"User with facebook logged in!");
-           // [self.navigationController pushViewController:[[UserDetailsViewController alloc] initWithStyle:UITableViewStyleGrouped] animated:YES];
-        }
-    }];
-}
-
-
 #pragma mark - UIViewController
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -59,10 +34,6 @@
     if (![PFUser currentUser]) { // No user logged in
         // Create the log in view controller
         PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-        
-        logInViewController.fields= PFLogInFieldsUsernameAndPassword| PFLogInFieldsLogInButton|PFLogInFieldsFacebook|PFLogInFieldsSignUpButton|PFLogInFieldsPasswordForgotten;
-        
-
         [logInViewController setDelegate:self]; // Set ourselves as the delegate
         
         // Create the sign up view controller
@@ -79,9 +50,6 @@
 }
 
 #pragma mark - PFLogInViewControllerDelegate
-
-
-
 
 // Sent to the delegate to determine whether the log in request should be submitted to the server.
 - (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password {
@@ -109,8 +77,6 @@
 - (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController {
     NSLog(@"User dismissed the logInViewController");
 }
-
-
 
 
 
